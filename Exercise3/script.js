@@ -9,23 +9,23 @@ function calculerIMC() {
   }
 
   let imc = poids / (taille * taille);
-  let interpretation = "";
+  let message = "";
 
   if (imc < 18.5) {
-    interpretation = "Insuffisance pondérale (maigreur)";
+    message = "Insuffisance pondérale (maigreur)";
   } else if (imc < 25) {
-    interpretation = "Corpulence normale";
+    message = "Corpulence normale";
   } else if (imc < 30) {
-    interpretation = "Surpoids";
+    message = "Surpoids";
   } else if (imc < 35) {
-    interpretation = "Obésité modérée";
+    message = "Obésité modérée";
   } else if (imc < 40) {
-    interpretation = "Obésité sévère";
+    message = "Obésité sévère";
   } else {
-    interpretation = "Obésité morbide ou massive";
+    message = "Obésité morbide ou massive";
   }
 
   document.getElementById("result").innerText = `Votre IMC est de ${imc.toFixed(
     2
-  )}. ${interpretation}.`;
+  )}. ${message}.`;
 }
