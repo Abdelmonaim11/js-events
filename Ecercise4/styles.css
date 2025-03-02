@@ -46,3 +46,7 @@ button {
 button:hover {
   background: darkgray;
 }
+.number {
+  background-color: #eee;
+  color: black;
+}
